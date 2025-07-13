@@ -29,6 +29,12 @@ def submit():
 
     return render_template('success.html', name=name)
 
+@app.route('/messages')
+def view_messages():
+    all_contacts = Contact.query.all()
+    return render_template('messages.html', contacts=all_contacts)
+
+
 with app.app_context():
     db.create_all()
 
