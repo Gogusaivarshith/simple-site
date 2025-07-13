@@ -1,10 +1,15 @@
 <!-- templates/index.html -->
 <!DOCTYPE html>
 <html>
-<head>
-    <title>My First Live Site</title>
-</head>
+<head><title>Contact Form</title></head>
 <body>
-    <h1>🚀 Hello, this site is live on the internet!</h1>
+  <h2>Contact Us</h2>
+  <form action="/submit" method="POST">
+    <label>Name:</label><br>
+    <input type="text" name="name" required><br><br>
+    <label>Message:</label><br>
+    <textarea name="message" required></textarea><br><br>
+    <button type="submit">Submit</button>
+  </form>
 </body>
 </html>
